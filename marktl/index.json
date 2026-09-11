@@ -1,19 +1,40 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T06:19:41.751Z",
+  "updatedAt": "2026-09-11T07:45:57.560Z",
   "items": [
     {
-      "slug": "2026-09-11-옵시디언-노트가-ppt로-코덱스-cli로-ai-슬라이드-자동-생성하는-법-캔바-연동까지-deep",
+      "slug": "2014-09-01-if-your-kids-get-free-health-care-you-re-more-likely-to-start-a-company-deep",
+      "shortId": "1obz34c",
+      "url": "https://sowongowon-ops.github.io/document/marktl/s/1obz34c/",
+      "canonicalUrl": "https://sowongowon-ops.github.io/document/marktl/2014-09-01-if-your-kids-get-free-health-care-you-re-more-likely-to-start-a-company-deep/",
+      "sourcePath": "30_Resources/Clippings/News/HBR/2014-09-01_if-your-kids-get-free-health-care-you-re-more-likely-to-start-a-company_deep.md",
+      "artifactType": "research-report",
+      "title": "If Your Kids Get Free Health Care, You’re More Likely to Start a Company",
+      "excerpt": "1. Executive Summary [!summary]+ Executive Summary 공공 의료 보험 지원(예: CHIP)은 어린이 질병으로 인한 재정적 위험 부담을 줄여주어, 특히 저소득층 가정의 부모들이 창업을 시작할 가능성을 높입니다. 1997년 미국 CHIP 도입 이후, 해당 프로그램 수혜 가정의 자영업률이 ",
+      "tags": [
+        "- HBR",
+        "Walter Frick",
+        "Management",
+        "HBR",
+        "deep-analysi",
+        "entrepreneurship",
+        "public health insurance",
+        "risk mitigation"
+      ],
+      "updatedAt": "2026-09-11T07:45:57.560Z"
+    },
+    {
+      "slug": "2026-09-11-ìµìëì¸-ë¸í¸ê°-pptë¡-ì½ë±ì¤-clië¡-ai-ì¬ë¼ì´ë-ìë-ìì±íë-ë²-ìºë°-ì°ëê¹ì§-deep",
       "shortId": "1i2yv2s",
       "url": "https://sowongowon-ops.github.io/document/marktl/s/1i2yv2s/",
       "canonicalUrl": "https://sowongowon-ops.github.io/document/marktl/2026-09-11-%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8-%EB%85%B8%ED%8A%B8%EA%B0%80-ppt%EB%A1%9C-%EC%BD%94%EB%8D%B1%EC%8A%A4-cli%EB%A1%9C-ai-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EC%9E%90%EB%8F%99-%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94-%EB%B2%95-%EC%BA%94%EB%B0%94-%EC%97%B0%EB%8F%99%EA%B9%8C%EC%A7%80-deep/",
-      "sourcePath": "30_Resources/Clippings/YouTube/2026-09-11_옵시디언 노트가 PPT로-! 코덱스 CLI로 AI 슬라이드 자동 생성하는 법 (캔바 연동까지)_deep.md",
+      "sourcePath": "30_Resources/Clippings/YouTube/2026-09-11_ìµìëì¸ ë¸í¸ê° PPTë¡-! ì½ë±ì¤ CLIë¡ AI ì¬ë¼ì´ë ìë ìì±íë ë² (ìºë° ì°ëê¹ì§)_deep.md",
       "artifactType": "research-report",
-      "title": "옵시디언 노트가 PPT로?! 코덱스 CLI로 AI 슬라이드 자동 생성하는 법 (캔바 연동까지)",
+      "title": "ìµìëì¸ ë¸í¸ê° PPTë¡?! ì½ë±ì¤ CLIë¡ AI ì¬ë¼ì´ë ìë ìì±íë ë² (ìºë° ì°ëê¹ì§)",
       "excerpt": "Video <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/apfbHOAYOs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboardwrite; e",
       "tags": [
         "- \"youtube",
-        "배움의 달인 (AI·자동화)",
+        "ë°°ìì ë¬ì¸ (AIÂ·ìëí)",
         "AI/ML",
         "youtube",
         "deep-analysi"
