@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <title>아이의 의료비 걱정이 줄면, 부모는 창업에 더 과감해진다</title>
+  <style>
+    :root {
+      --ink: #172326;
+      --muted: #607174;
+      --paper: #f7f4ed;
+      --surface: #fffdf8;
+      --forest: #173b3f;
+      --teal: #2c6968;
+      --mint: #dcebe3;
+      --gold: #c9903e;
+      --gold-soft: #f3e7cf;
+      --line: #d9ddd5;
+      --shadow: 0 18px 50px rgba(24, 53, 55, .09);
+      --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Noto Serif KR", "Nanum Myeongjo", Georgia, serif;
+      --sans: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 4%, rgba(201, 144, 62, .11), transparent 28rem),
+        linear-gradient(180deg, #edf3ef 0, var(--paper) 34rem);
+      font-family: var(--sans);
+      line-height: 1.82;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+
+    a {
+      color: var(--teal);
+      text-decoration-thickness: 1px;
+      text-underline-offset: .22em;
+    }
+
+    a:hover { color: var(--gold); }
+    .shell { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(23, 59, 63, .15);
+      font-size: .78rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .brand { color: var(--forest); font-weight: 800; }
+    .issue { color: var(--muted); }
+
+    .hero {
+      padding: clamp(70px, 11vw, 138px) 0 78px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: clamp(42px, 8vw, 108px);
+      align-items: end;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 25px;
+      color: var(--teal);
+      font-size: .79rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 0;
+      color: var(--forest);
+      font-family: var(--serif);
+      font-size: clamp(2.85rem, 7vw, 6.55rem);
+      font-weight: 700;
+      letter-spacing: -.055em;
+      line-height: 1.04;
+    }
+
+    .dek {
+      max-width: 760px;
+      margin: 32px 0 0;
+      color: #40575a;
+      font-family: var(--serif);
+      font-size: clamp(1.18rem, 2.2vw, 1.55rem);
+      line-height: 1.7;
+    }
+
+    .hero-note {
+      padding: 28px 0 8px 28px;
+      border-left: 1px solid var(--gold);
+      color: var(--muted);
+      font-size: .91rem;
+    }
+
+    .hero-note strong {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--ink);
+      font-size: 1rem;
+    }
+
+    .article-card {
+      background: var(--surface);
+      border: 1px solid rgba(23, 59, 63, .11);
+      border-radius: 28px 28px 0 0;
+      box-shadow: var(--shadow);
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .meta div { padding: 23px 28px; border-right: 1px solid var(--line); }
+    .meta div:last-child { border-right: 0; }
+
+    .meta span {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--muted);
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .meta strong { color: var(--forest); font-size: .92rem; }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 730px);
+      justify-content: center;
+      gap: clamp(45px, 7vw, 92px);
+      padding: 70px 36px 100px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+      padding-top: 8px;
+    }
+
+    .toc p {
+      margin: 0 0 14px;
+      color: var(--forest);
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .toc a {
+      display: block;
+      padding: 7px 0;
+      color: var(--muted);
+      font-size: .84rem;
+      line-height: 1.45;
+      text-decoration: none;
+    }
+
+    .toc a:hover { color: var(--gold); }
+
+    article section { margin: 0 0 88px; scroll-margin-top: 30px; }
+
+    .section-label {
+      margin: 0 0 12px;
+      color: var(--gold);
+      font-size: .76rem;
+      font-weight: 850;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0 0 28px;
+      color: var(--forest);
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      letter-spacing: -.035em;
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin: 38px 0 13px;
+      color: var(--forest);
+      font-size: 1.13rem;
+      line-height: 1.45;
+    }
+
+    p { margin: 0 0 20px; }
+
+    .abstract {
+      padding: 32px 34px;
+      background: linear-gradient(135deg, var(--mint), #eef5f0);
+      border-left: 4px solid var(--teal);
+      border-radius: 0 18px 18px 0;
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      line-height: 1.85;
+    }
+
+    .findings {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 34px;
+    }
+
+    .finding {
+      min-height: 180px;
+      padding: 25px;
+      background: #fbfaf5;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+
+    .finding .number {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--gold);
+      font-family: var(--serif);
+      font-size: 2.35rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .finding strong { display: block; margin-bottom: 8px; color: var(--forest); }
+    .finding p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.65; }
+
+    blockquote {
+      position: relative;
+      margin: 60px -35px;
+      padding: 39px 45px 35px;
+      color: var(--forest);
+      border-top: 1px solid var(--gold);
+      border-bottom: 1px solid var(--gold);
+      font-family: var(--serif);
+      font-size: clamp(1.55rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -.025em;
+      line-height: 1.5;
+    }
+
+    blockquote::before {
+      content: "“";
+      position: absolute;
+      top: -11px;
+      left: 16px;
+      padding: 0 12px;
+      color: var(--gold);
+      background: var(--surface);
+      font-size: 2.4rem;
+      line-height: 1;
+    }
+
+    .data-table {
+      width: 100%;
+      margin: 32px 0;
+      border-collapse: collapse;
+      font-size: .91rem;
+    }
+
+    .data-table caption {
+      padding-bottom: 14px;
+      color: var(--muted);
+      text-align: left;
+      font-size: .8rem;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 17px 15px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .data-table th {
+      color: var(--forest);
+      background: #eef3ee;
+      font-size: .78rem;
+      letter-spacing: .03em;
+    }
+
+    .data-table td strong { color: var(--teal); }
+
+    .causal-flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 34px 0;
+    }
+
+    .flow-step {
+      position: relative;
+      padding: 22px 17px;
+      background: var(--forest);
+      border-radius: 13px;
+      color: white;
+      font-size: .85rem;
+      line-height: 1.55;
+      text-align: center;
+    }
+
+    .flow-step:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      right: -17px;
+      width: 24px;
+      color: var(--gold);
+      font-size: 1.15rem;
+      font-weight: 800;
+      transform: translateY(-50%);
+    }
+
+    .flow-step small {
+      display: block;
+      margin-bottom: 4px;
+      color: #b9d7ce;
+      font-size: .7rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .method {
+      margin-top: 30px;
+      padding: 28px 30px;
+      border: 1px solid #c9d7d2;
+      border-radius: 16px;
+      background: #f5f8f5;
+    }
+
+    .method h3 { margin-top: 0; }
+
+    .threshold {
+      display: grid;
+      grid-template-columns: 1fr 56px 1fr;
+      align-items: stretch;
+      margin: 28px 0 8px;
+    }
+
+    .group {
+      padding: 22px;
+      border-radius: 12px;
+      background: white;
+      border: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .group strong { color: var(--forest); }
+    .group span { display: block; color: var(--muted); font-size: .82rem; }
+
+    .cutoff {
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      font-size: .7rem;
+      font-weight: 850;
+      letter-spacing: .08em;
+      writing-mode: vertical-rl;
+    }
+
+    .caveat {
+      padding: 20px 23px;
+      color: #685a42;
+      background: var(--gold-soft);
+      border-radius: 12px;
+      font-size: .87rem;
+      line-height: 1.7;
+    }
+
+    .concepts {
+      display: grid;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .concept {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 24px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .concept strong { color: var(--forest); }
+    .concept p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+    .implications {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .implication {
+      padding: 25px 22px;
+      border-radius: 15px;
+      background: var(--forest);
+      color: #ecf4ef;
+    }
+
+    .implication strong {
+      display: block;
+      margin-bottom: 10px;
+      color: #f3c477;
+    }
+
+    .implication p { margin: 0; font-size: .87rem; line-height: 1.7; }
+
+    .checklist {
+      margin: 25px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .checklist li {
+      position: relative;
+      padding: 13px 0 13px 38px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .checklist li::before {
+      content: "";
+      position: absolute;
+      top: 19px;
+      left: 2px;
+      width: 17px;
+      height: 17px;
+      border: 2px solid var(--teal);
+      border-radius: 4px;
+    }
+
+    .share {
+      margin-top: 65px;
+      padding: 32px;
+      background: #edf2ed;
+      border-radius: 17px;
+    }
+
+    .share h3 { margin-top: 0; }
+    .copy-ready {
+      margin: 15px 0 0;
+      padding: 18px 20px;
+      color: var(--forest);
+      background: white;
+      border: 1px dashed #9bb0aa;
+      border-radius: 10px;
+      font-size: .91rem;
+      line-height: 1.7;
+    }
+
+    .sources {
+      padding-top: 50px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .83rem;
+    }
+
+    .sources h2 { font-size: 1.8rem; }
+    .sources ol { padding-left: 20px; }
+    .sources li { margin-bottom: 13px; }
+
+    .closing {
+      margin-bottom: 0;
+      padding: 58px 42px;
+      color: white;
+      background: linear-gradient(135deg, var(--forest), #285a59);
+      border-radius: 22px;
+      text-align: center;
+    }
+
+    .closing .section-label { color: #f2c477; }
+    .closing h2 { max-width: 610px; margin: 0 auto 24px; color: white; }
+    .closing p { max-width: 600px; margin: 0 auto; color: #d8e7e1; }
+
+    footer {
+      padding: 38px 20px 52px;
+      color: #718083;
+      font-size: .77rem;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-note { max-width: 520px; }
+      .meta { grid-template-columns: repeat(2, 1fr); }
+      .meta div:nth-child(2) { border-right: 0; }
+      .meta div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .article-grid { grid-template-columns: 1fr; padding-inline: clamp(22px, 6vw, 54px); }
+      .toc { position: static; display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px 15px; border-bottom: 1px solid var(--line); padding-bottom: 28px; }
+      .toc p { grid-column: 1 / -1; }
+      blockquote { margin-inline: 0; }
+    }
+
+    @media (max-width: 650px) {
+      .shell { width: min(100% - 26px, 1180px); }
+      .topbar { align-items: flex-start; flex-direction: column; gap: 4px; }
+      .article-card { border-radius: 20px 20px 0 0; }
+      .meta { grid-template-columns: 1fr; }
+      .meta div { border-right: 0; border-bottom: 1px solid var(--line); }
+      .meta div:last-child { border-bottom: 0; }
+      .article-grid { padding: 48px 20px 70px; }
+      .toc { grid-template-columns: repeat(2, 1fr); }
+      .findings, .implications { grid-template-columns: 1fr; }
+      .causal-flow { grid-template-columns: 1fr; }
+      .flow-step:not(:last-child)::after {
+        content: "↓";
+        top: auto;
+        right: 50%;
+        bottom: -22px;
+        transform: translateX(50%);
+      }
+      .threshold { grid-template-columns: 1fr; gap: 8px; }
+      .cutoff { writing-mode: horizontal-tb; }
+      .concept { grid-template-columns: 1fr; gap: 4px; }
+      blockquote { padding-inline: 24px; }
+      .abstract, .share, .closing { padding: 26px 23px; }
+      .data-table { display: block; overflow-x: auto; white-space: normal; }
+    }
+
+    @media print {
+      body { background: white; }
+      .topbar, .toc, .share { display: none; }
+      .shell { width: 100%; }
+      .article-card { border: 0; box-shadow: none; }
+      .article-grid { display: block; padding: 40px; }
+      article section { break-inside: avoid; }
+      a { color: inherit; }
+    }
+  </style>
+<meta property="og:type" content="article">
+<meta property="og:title" content="If Your Kids Get Free Health Care, You’re More Likely to Start a Company">
+<meta property="og:description" content="1. Executive Summary [!summary]+ Executive Summary 공공 의료 보험 지원(예: CHIP)은 어린이 질병으로 인한 재정적 위험 부담을 줄여주어, 특히 저소득층 가정의 부모들이 창업을 시작할 가능성을 높입니다. 1997년 미국 CHIP 도입 이후, 해당 프로그램 수혜 가정의 자영업률이 ">
+<meta property="og:url" content="https://sowongowon-ops.github.io/document/marktl/s/1obz34c/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="If Your Kids Get Free Health Care, You’re More Likely to Start a Company">
+<meta name="twitter:description" content="1. Executive Summary [!summary]+ Executive Summary 공공 의료 보험 지원(예: CHIP)은 어린이 질병으로 인한 재정적 위험 부담을 줄여주어, 특히 저소득층 가정의 부모들이 창업을 시작할 가능성을 높입니다. 1997년 미국 CHIP 도입 이후, 해당 프로그램 수혜 가정의 자영업률이 ">
+<link rel="canonical" href="https://sowongowon-ops.github.io/document/marktl/s/1obz34c/">
+</head>
+<body>
+  <header class="shell">
+    <div class="topbar">
+      <div class="brand">Research Editorial</div>
+      <div class="issue">Management · Issue BR1501</div>
+    </div>
+
+    <div class="hero">
+      <div>
+        <div class="eyebrow">사회 안전망 × 기업가 정신</div>
+        <h1>아이의 의료비 걱정이 줄면, 부모는 창업에 더 과감해진다</h1>
+        <p class="dek">
+          복지는 도전 정신을 약화시킨다는 통념과 달리, 공공 의료보험은 가계의 치명적인 하방 위험을 줄여 새로운 사업에 뛰어들 여지를 만들 수 있다.
+        </p>
+      </div>
+      <aside class="hero-note" aria-label="한눈에 보는 기사">
+        <strong>한눈에 보는 논점</strong>
+        안전망은 위험을 없애지 않는다. 다만 실패가 가족의 의료 위기로 번지는 경로를 차단해, 감당 가능한 위험으로 바꾼다.
+      </aside>
+    </div>
+  </header>
+
+  <main class="shell article-card">
+    <div class="meta" aria-label="문서 정보">
+      <div><span>원문 저자</span><strong>Walter Frick</strong></div>
+      <div><span>원문 발행</span><strong>2014년 9월</strong></div>
+      <div><span>연구 대상</span><strong>미국 CHIP</strong></div>
+      <div><span>읽는 시간</span><strong>약 9분</strong></div>
+    </div>
+
+    <div class="article-grid">
+      <nav class="toc" aria-label="목차">
+        <p>Contents</p>
+        <a href="#abstract">초록</a>
+        <a href="#findings">핵심 발견</a>
+        <a href="#barrier">창업의 숨은 장벽</a>
+        <a href="#evidence">데이터와 근거</a>
+        <a href="#method">연구 방법</a>
+        <a href="#mechanism">작동 원리</a>
+        <a href="#limits">해석의 한계</a>
+        <a href="#implications">정책적 함의</a>
+        <a href="#actions">다음 질문</a>
+        <a href="#sources">출처 노트</a>
+      </nav>
+
+      <article>
+        <section id="abstract">
+          <p class="section-label">Abstract</p>
+          <h2>안전망은 도전의 반대말이 아니다</h2>
+          <div class="abstract">
+            이 보고서는 미국 아동 건강보험 프로그램인 CHIP의 확대가 부모의 창업 행동에 어떤 영향을 미쳤는지 살펴본다. 소개된 연구에 따르면, 자녀가 공공 의료보험의 보호를 받을 수 있게 된 가정에서는 자영업과 기업 소유가 모두 증가했다. 핵심 메커니즘은 단순한 소득 지원이 아니라, 자녀의 질병으로 발생할 수 있는 갑작스럽고 큰 의료비 지출—즉 소비 충격—의 완화다. 결과는 사회보험이 경제적 위험 감수를 반드시 억제하는 것이 아니라, 오히려 기업가적 선택의 전제조건이 될 수 있음을 시사한다.
+          </div>
+        </section>
+
+        <section id="findings">
+          <p class="section-label">Key Findings</p>
+          <h2>숫자가 보여주는 세 가지 변화</h2>
+          <p>
+            1997년 CHIP 도입 전후를 분석한 연구는 보험 접근성의 변화와 창업 활동 사이에서 뚜렷한 움직임을 포착했다. 특히 단순 자영업뿐 아니라 기업 소유 지표에서도 증가가 관찰됐다는 점이 중요하다.
+          </p>
+
+          <div class="findings">
+            <div class="finding">
+              <span class="number">23%</span>
+              <strong>자영업률 증가</strong>
+              <p>원문이 소개한 연구 결과상, CHIP 수혜 자격 가정의 자영업 참여가 유의미하게 늘었다.</p>
+            </div>
+            <div class="finding">
+              <span class="number">31%</span>
+              <strong>기업 소유율 증가</strong>
+              <p>4.3%에서 5.8%로 상승해, 보다 지속적이고 성장 지향적인 사업 활동 가능성을 보여줬다.</p>
+            </div>
+            <div class="finding">
+              <span class="number">1997</span>
+              <strong>정책 변화의 기준점</strong>
+              <p>미국 CHIP 도입은 정책 전후와 자격 경계 주변 가구를 비교할 수 있는 준실험적 조건을 제공했다.</p>
+            </div>
+            <div class="finding">
+              <span class="number">65세</span>
+              <strong>추가 증거의 경계</strong>
+              <p>메디케어 자격이 시작되는 나이에 창업이 증가한다는 기존 연구도 같은 방향의 해석을 뒷받침한다.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="barrier">
+          <p class="section-label">The Hidden Barrier</p>
+          <h2>창업을 막는 것은 사업 위험만이 아니다</h2>
+          <p>
+            회사를 시작한다는 것은 안정적인 급여를 포기하고 불확실한 수입을 받아들이는 일이다. 하지만 자녀가 있는 가정에는 또 하나의 위험이 겹친다. 직장을 떠나는 순간 고용과 연결된 건강보험을 잃거나 보장 수준이 약해질 수 있다는 점이다.
+          </p>
+          <p>
+            이때 부모가 계산하는 것은 사업의 성공 확률만이 아니다. 사업이 흔들리는 동안 아이가 아프면 어떻게 할지, 예상하지 못한 의료비를 감당할 수 있을지까지 함께 판단한다. 잠재적으로 큰 의료비는 사업 계획서에 잡히지 않지만, 창업 결정을 좌우하는 실질적인 진입 장벽이 된다.
+          </p>
+
+          <blockquote>
+            실패해도 가족의 의료 안전까지 무너지지는 않는다는 확신이 있을 때, 사람들은 더 큰 경제적 도전을 선택할 수 있다.
+          </blockquote>
+
+          <p>
+            따라서 의료보험은 건강 정책인 동시에 노동 이동성과 기업 생성에 영향을 주는 경제 정책이다. 보험의 보호 범위가 넓어지면 직장을 떠나는 비용이 낮아지고, 오랫동안 미뤄둔 사업 아이디어를 실행할 선택지가 생긴다.
+          </p>
+        </section>
+
+        <section id="evidence">
+          <p class="section-label">Evidence</p>
+          <h2>CHIP 이후 무엇이 달라졌나</h2>
+          <p>
+            Gareth Olds의 연구를 소개한 HBR 기사에 따르면, CHIP 수혜 자격을 얻은 가정은 그렇지 않은 유사 가정보다 창업 관련 지표에서 더 큰 증가를 보였다.
+          </p>
+
+          <table class="data-table">
+            <caption>기사와 학습 노트에 제시된 주요 결과 요약</caption>
+            <thead>
+              <tr>
+                <th scope="col">관찰 지표</th>
+                <th scope="col">정책 전후 수준</th>
+                <th scope="col">보고된 변화</th>
+                <th scope="col">해석</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>자영업률</td>
+                <td>약 15% 미만 → 18% 이상</td>
+                <td><strong>23% 증가</strong></td>
+                <td>공공보험 접근성이 창업 또는 독립적 경제활동의 진입을 촉진했을 가능성</td>
+              </tr>
+              <tr>
+                <td>기업 소유율</td>
+                <td>4.3% → 5.8%</td>
+                <td><strong>31% 증가</strong></td>
+                <td>단기적 자영업을 넘어 지속 가능한 사업체 형성과 연결될 가능성</td>
+              </tr>
+              <tr>
+                <td>메디케어 경계</td>
+                <td>64세 → 65세</td>
+                <td>창업률 상승 경향</td>
+                <td>개인의 건강보험 접근성 개선이 연령대가 달라도 위험 감수를 높일 수 있다는 보강 증거</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="caveat">
+            <strong>수치 읽기:</strong> 표의 비율은 원문을 정리한 학습 노트의 반올림 값이다. “15% 미만”과 “18% 이상”처럼 범위로 표현된 수치만으로 정확한 증감률을 다시 계산하면 차이가 생길 수 있으므로, 23%와 31%는 연구를 소개한 기사의 보고치로 이해해야 한다.
+          </div>
+        </section>
+
+        <section id="method">
+          <p class="section-label">Research Design</p>
+          <h2>정책이 정말 창업을 ‘야기’했는가</h2>
+          <p>
+            단순히 보험 가입자와 비가입자의 창업률을 비교해서는 인과관계를 말하기 어렵다. 두 집단은 소득, 교육, 가족 구성, 지역 환경 등 여러 면에서 처음부터 다를 수 있기 때문이다.
+          </p>
+
+          <div class="method">
+            <h3>자격 기준선 주변을 비교하는 준실험</h3>
+            <p>
+              연구는 CHIP 수혜 자격을 결정하는 소득 기준선에 주목했다. 기준선 바로 아래와 바로 위에 있는 가구는 생활 조건이 대체로 비슷하지만, 한쪽은 보험 혜택을 받을 수 있고 다른 쪽은 받지 못한다. 이 불연속적인 차이를 활용하면 보험 자격의 효과를 다른 요인으로부터 더 잘 분리할 수 있다.
+            </p>
+
+            <div class="threshold" aria-label="CHIP 자격 기준선 비교 구조">
+              <div class="group">
+                <strong>기준선 바로 아래</strong>
+                <span>가구 특성은 유사 · CHIP 수혜 가능</span>
+              </div>
+              <div class="cutoff">자격 경계</div>
+              <div class="group">
+                <strong>기준선 바로 위</strong>
+                <span>가구 특성은 유사 · CHIP 수혜 제한</span>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            이 접근은 무작위 실험은 아니지만, 정책 자격 외에는 상당히 닮은 두 집단을 비교함으로써 단순 상관관계보다 강한 인과적 추론을 가능하게 한다.
+          </p>
+        </section>
+
+        <section id="mechanism">
+          <p class="section-label">Mechanism</p>
+          <h2>보험이 창업으로 이어지는 경로</h2>
+          <p>
+            핵심 개념은 ‘소비 충격’이다. 질병이나 사고처럼 예측하기 어려운 사건은 가계에 갑작스럽고 큰 지출을 발생시킨다. 수입까지 불안정한 창업 초기라면 이 충격은 사업과 가계 재정을 동시에 흔들 수 있다.
+          </p>
+
+          <div class="causal-flow" aria-label="공공 의료보험이 창업을 촉진하는 인과 경로">
+            <div class="flow-step"><small>Policy</small>자녀의 공공 의료보험 접근 확대</div>
+            <div class="flow-step"><small>Protection</small>예상 밖 의료비 부담 감소</div>
+            <div class="flow-step"><small>Decision</small>가계가 감당하는 하방 위험 축소</div>
+            <div class="flow-step"><small>Outcome</small>창업과 기업 소유 증가</div>
+          </div>
+
+          <p>
+            여기서 안전망은 사업 실패의 가능성을 낮추지 않는다. 대신 사업 실패와 가족 의료 위기가 동시에 발생할 가능성을 줄인다. 다시 말해, 도전 자체를 보상하기보다 실패 비용의 일부를 사회적으로 분산한다.
+          </p>
+
+          <div class="concepts">
+            <div class="concept">
+              <strong>기업가 정신</strong>
+              <p>새로운 기회를 포착하고 불확실성을 감수해 제품, 서비스 또는 조직을 만드는 활동.</p>
+            </div>
+            <div class="concept">
+              <strong>소비 충격</strong>
+              <p>질병이나 사고처럼 예상하지 못한 사건 때문에 발생하는 급격하고 큰 가계 지출.</p>
+            </div>
+            <div class="concept">
+              <strong>CHIP</strong>
+              <p>저소득·중간소득 가정의 아동에게 공적 재원으로 건강보험을 제공하는 미국 프로그램.</p>
+            </div>
+            <div class="concept">
+              <strong>준실험적 방법</strong>
+              <p>정책 기준이나 자연적 경계를 활용해 실제 실험에 가까운 비교 조건을 만들고 인과효과를 추정하는 접근.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="limits">
+          <p class="section-label">Limits &amp; Counterpoints</p>
+          <h2>좋은 결과가 곧 모든 정책의 정답은 아니다</h2>
+
+          <h3>다른 정책과 경기 변화</h3>
+          <p>
+            연구가 여러 변수를 통제하더라도 같은 시기에 시행된 다른 제도, 지역별 경기 변화 또는 노동시장 상황이 일부 영향을 미쳤을 가능성은 남는다.
+          </p>
+
+          <h3>창업의 양과 질은 다르다</h3>
+          <p>
+            창업 건수가 증가했다고 해서 모든 사업이 혁신적이거나 장기적으로 성장한다는 뜻은 아니다. 기업 소유율의 상승은 긍정적인 보완 지표지만, 생존율·고용 창출·생산성까지 확인해야 경제적 가치를 온전히 평가할 수 있다.
+          </p>
+
+          <h3>정치적 해석과 실증 결과의 구분</h3>
+          <p>
+            사회보험의 적정 범위는 재원, 형평성, 행정비용과 함께 논의해야 한다. 다만 “안전망은 언제나 위험 감수를 약화시킨다”는 일률적인 주장은 이 연구 결과와 부합하지 않는다. 정책 논쟁과 관찰된 행동 변화를 구분해 읽을 필요가 있다.
+          </p>
+        </section>
+
+        <section id="implications">
+          <p class="section-label">Implications</p>
+          <h2>의료 정책을 성장 정책으로 다시 보기</h2>
+          <p>
+            이 연구가 던지는 가장 큰 질문은 복지를 얼마나 제공할 것인가가 아니라, 어떤 위험을 사회적으로 분산할 때 더 많은 사람이 생산적인 도전에 참여할 수 있는가이다.
+          </p>
+
+          <div class="implications">
+            <div class="implication">
+              <strong>정책 입안자</strong>
+              <p>건강보험·보육·주거 지원을 복지 지출로만 보지 말고 창업 진입비용과 노동 이동성을 바꾸는 경제 인프라로 평가해야 한다.</p>
+            </div>
+            <div class="implication">
+              <strong>기업과 리더</strong>
+              <p>복리후생은 직원의 현재 안정뿐 아니라 새로운 역할, 독립 사업, 혁신적 프로젝트에 도전할 수 있는 선택권에도 영향을 준다.</p>
+            </div>
+            <div class="implication">
+              <strong>예비 창업가</strong>
+              <p>사업자금만 계산하지 말고 건강·돌봄·소득 공백에서 발생할 수 있는 가계 충격과 이를 흡수할 보험 장치를 함께 설계해야 한다.</p>
+            </div>
+          </div>
+
+          <blockquote>
+            사회 안전망의 경제적 가치는 보호받는 사람의 수뿐 아니라, 그 보호 덕분에 새롭게 시도된 일의 수로도 측정할 수 있다.
+          </blockquote>
+        </section>
+
+        <section id="actions">
+          <p class="section-label">Reader Agenda</p>
+          <h2>이 연구 다음에 확인할 것</h2>
+          <ul class="checklist">
+            <li>Gareth Olds의 CHIP 관련 원 연구를 찾아 표본, 추정 방식, 통계적 유의성을 확인한다.</li>
+            <li>한국의 건강보험·실업급여·육아 지원이 창업 진입과 생존율에 미치는 실증 연구를 비교한다.</li>
+            <li>의료비 외에 주거비와 보육비 충격도 창업 선택에 유사한 영향을 주는지 살펴본다.</li>
+            <li>창업 증가가 고용 창출, 사업 생존율, 생산성 향상으로 이어졌는지 장기 데이터를 확인한다.</li>
+            <li>위험 완화의 긍정적 효과와 도덕적 해이·재정 부담 사이의 정책적 균형을 검토한다.</li>
+          </ul>
+
+          <div class="share">
+            <h3>공유할 때 쓸 수 있는 한 문장</h3>
+            <p class="copy-ready">
+              “안전망은 도전을 대신하지 않는다. 다만 실패가 가족 전체의 위기로 번지는 것을 막아, 더 많은 사람이 창업이라는 위험을 감수할 수 있게 한다.”
+            </p>
+          </div>
+        </section>
+
+        <section id="sources" class="sources">
+          <p class="section-label">Source Notes</p>
+          <h2>출처와 편집 노트</h2>
+          <ol>
+            <li>
+              Walter Frick, <a>“If Your Kids Get Free Health Care, You’re More Likely to Start a Company”</a>, Harvard Business Review, 2014년 9월.
+            </li>
+            <li>
+              본 글은 위 HBR 기사를 바탕으로 작성된 한국어 학습 노트를 공개용 연구 에디토리얼 형식으로 재구성했다. 수치와 연구 설명은 제공된 노트의 내용을 따랐다.
+            </li>
+            <li>
+              Gareth Olds의 CHIP 관련 원 연구 제목과 전문은 제공된 노트에 포함되지 않았다. 엄밀한 학술 검토나 정책 의사결정에는 원 논문의 데이터, 모형, 신뢰구간 및 후속 연구 확인이 필요하다.
+            </li>
+            <li>
+              메디케어와 65세 전후 창업률의 관계는 방향성을 보강하는 관련 연구로 소개됐으며, CHIP 분석과 동일한 연구 설계나 표본을 의미하지 않는다.
+            </li>
+          </ol>
+        </section>
+
+        <section class="closing">
+          <p class="section-label">Closing Thought</p>
+          <h2>사람은 안전해서 도전하는 것이 아니라, 추락해도 삶 전체가 무너지지 않을 때 도전한다</h2>
+          <p>
+            기업가 정신은 개인의 용기만으로 만들어지지 않는다. 가족의 건강, 돌봄과 생계를 지탱하는 제도 역시 누가 위험을 감수할 수 있는지를 결정한다. 좋은 안전망은 도전을 없애는 장치가 아니라, 도전할 자격을 더 많은 사람에게 돌려주는 기반일 수 있다.
+          </p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    Editorial research report · Management · 사회 안전망과 창업의 관계
+  </footer>
+</body>
+</html>
